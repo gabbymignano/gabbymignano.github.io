@@ -1,5 +1,3 @@
-# Welcome to Gabby Mignano Page
-
 gabbymignano.github.io
 # Hello World
 
