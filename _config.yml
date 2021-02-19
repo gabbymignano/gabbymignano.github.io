@@ -1,5 +1,9 @@
 theme: jekyll-theme-cayman
 title: Welcome to Gabby Mignano's Page!
 description: Page for updates on projects and labs in DATA310
- 
-permalink: /about/
+
+---
+layout: page
+title: Resume
+permalink: /resume/
+---
