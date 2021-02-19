@@ -1,3 +1,7 @@
 theme: jekyll-theme-cayman
 title: Welcome to Gabby Mignano's Page!
 description: Page for updates on projects and labs in DATA310
+---
+title: PAGE TITLE HERE
+layout: template
+filename: NAME OF THIS .md FILE HERE
