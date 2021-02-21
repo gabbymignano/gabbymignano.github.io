@@ -7,4 +7,4 @@ Project 0 DATA310 Assignment
 
 [Lab 2 DATA310 Due 2/21](https://gabbymignano.github.io/Lab 2 Work.ipynb)
 
-![](Lab 2 Work.ipynb)
+![](Lab_2_Work.ipynb)
