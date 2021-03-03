@@ -3,39 +3,33 @@ body {
     font-family: "Montserrat";
     margin: 0px;
 }
-
 .about {
     background-color: black;
     color: white;
     padding: 5px;
     box-shadow: 0px 0px 10px 2px black;
 }
-
 .projects {
-    background-color: white;
+    background-color: lightblue;
     color: black;
     box-shadow: 0px 0px 10px 2px black;
     padding: 5px;
-    margin: 500px 50px 50px 50px;
+    margin: 250px 50px 50px 50px;
 }
-
 .project {
     margin: 50px;
 }
-
 .project-content {
     display: inline-block;
     text-align: left;
     vertical-align: top;
     margin: 45px 50px 50px 50px;
 }
-
 .project-thumbnail {
     display: inline-block;
-    height: 200px;
+    height: 100px;
     border: 2px solid lightgray;
 }
-
 .project-content button {
     font-family: "Montserrat";
     font-weight: 700;
@@ -48,7 +42,6 @@ body {
     border: 1px solid gray;
     box-shadow: 0px 2px 6px 0px #000000A0;
 }
-
 .project-content button:hover {
     color: black;
     border: 3px solid rgb(119, 176, 223);
