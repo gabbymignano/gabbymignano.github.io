@@ -7,25 +7,9 @@
   <body>
     <h1>Lab 1:</h1>
     
-    <h2>
-       <font color = 'blue'> Question 2: Write a Python code to import the data file 'L1data.csv' (introduced in Lecture 1) and code an imputation for replacing the NaN values in the "Age" column with the median of the column. The NaN instances are replaced by:
-         </h2>
-      </h3>
-         import numpy as np
-from sklearn.impute import SimpleImputer
-         import numpy as np
-import pandas as pd
-dat = pd.read_csv('drive/My Drive/Data Sci/L1Data.csv')
-         imputing_config = SimpleImputer(missing_values=np.nan,strategy='median')
-imp = imputing_config.fit(dat[["Age"]])
-imp
-         dat[["Age"]] = imp.transform(dat[["Age"]])
-    </h3>
-      
-      </h2>
-    Question 8:
-</h2>
-
+    <h2><font color = 'blue'> Question 2: Write a Python code to import the data file 'L1data.csv' (introduced in Lecture 1) and code an imputation for replacing the NaN values in the "Age" column with the median of the column. The NaN instances are replaced by:</h2>
+      </h3>import numpy as np</h3>
+  </h2>Question 8:</h2>
 </h3>
     import random
 
