@@ -9,40 +9,36 @@
     
     <h2><font color = 'blue'> Question 2: Write a Python code to import the data file 'L1data.csv' (introduced in Lecture 1) and code an imputation for replacing the NaN values in the "Age" column with the median of the column. The NaN instances are replaced by:</h2>
       </h3>import numpy as np</h3>
-  
-  
-  </h2>Question 8:</h2>
+    </h2>Question 8:</h2>
+      </h3>import random
+          doors = ["goat","goat","goat","car"]
 
+          switch_win_probability = []
+          stick_win_probability = []
 
-</h3>import random
-doors = ["goat","goat","goat","car"]
+          def monte_carlo(n):
 
-switch_win_probability = []
-stick_win_probability = []
+            switch_wins = 0
+            stick_wins = 0
 
-def monte_carlo(n):
+            for i in range(n):
+               random.shuffle(doors)
 
-  switch_wins = 0
-  stick_wins = 0
+           k = random.randrange(3)
 
-  for i in range(n):
-     random.shuffle(doors)
+           if doors[k] != 'car':
+             switch_wins +=1
 
-     k = random.randrange(3)
+           else:
+             stick_wins +=1
 
-     if doors[k] != 'car':
-       switch_wins +=1
-    
-     else:
-       stick_wins +=1
-    
-     switch_win_probability.append(switch_wins/(i+1))
-     stick_win_probability.append(stick_wins/(i+1))
-    
-  print('Winning probability if you always switch:', switch_win_probability[-1])
-  print('Winning probability if you always stick to your original choice:', stick_win_probability[-1])
+           switch_win_probability.append(switch_wins/(i+1))
+           stick_win_probability.append(stick_wins/(i+1))
 
-monte_carlo(1000)</h3> 
+          print('Winning probability if you always switch:', switch_win_probability[-1])
+          print('Winning probability if you always stick to your original choice:', stick_win_probability[-1])
+
+           monte_carlo(1000)</h3> 
 
   </body>
 </html>
