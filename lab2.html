@@ -10,8 +10,8 @@
 <body>
     <!-- This is the start of the "About" section -->
     <div class="Question 1">
-        <h1>Interval centered around mean w 8 st dev guaranteed to include at least what % of data?</h1>
-        <p># Chebyschev's Theorem<br>
+        <h1>Q1: Interval centered around mean w 8 st dev guaranteed to include at least what % of data?</h1>
+        <p>Chebyschev's Theorem<br>
             t = 4<br>
             (1-1/(t*t))*100</p>
     </div>
@@ -19,5 +19,7 @@
     <!-- This is the start of the projects section -->
     <div class="Question 3">
         <h1>Q3: mtcars dataset, zscore of 18.1 mpg car is?</h1>
+        <p>import numpy as np<br>import pandas as pd<br>data = pd.read_csv('drive/MyDrive/Data Sci/mtcars.csv')<br>data.mpg.values[5]<br>18.1<br>mpg = data.mpg.values<br>zs = (mpg-np.mean(mpg))/np.std(mpg)<br>
+         zs[5]<br>-0.3355723336253064
     </div>
 </body>
