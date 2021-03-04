@@ -1,7 +1,7 @@
 Lab 3 Work:
 
 Question 3:
----
+   ----
       import numpy as np
       import pandas as pd
       from sklearn.model_selection import train_test_split
@@ -21,8 +21,13 @@ Question 3:
       yhat_train= model.predict(x_train)
       yhat_test= model.predict(x_test)
       print('The sq rt MSE for the Test data is: ' +str(np.sqrt(mean_squared_error(y_test, yhat_test))))
+            The sq rt MSE for the Test data is: 8.324478857196405
 
 Question 5: Polynomial regression is best suited for functional relationships that are non-linear in weights.
     I wrote True because in Lecture 15 we were unsure about the linearity of the relationship between x and y, yet we still used a polynomial regression.
     However, I now see that it is mentioned in the notes that P(x) is nonlinear in x, but linear in weights.
 
+Question 7:
+      ----
+      y_train.shape
+            (23,)
