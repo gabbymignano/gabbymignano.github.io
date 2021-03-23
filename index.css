@@ -6,7 +6,7 @@ body {
 .about {
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 0px;
     box-shadow: 0px 0px 10px 2px black;
 }
 .projects {
@@ -17,7 +17,7 @@ body {
     margin: 250px 50px 50px 50px;
 }
 .project {
-    margin: 50px;
+    margin: 25px;
 }
 .project-content {
     display: inline-block;
