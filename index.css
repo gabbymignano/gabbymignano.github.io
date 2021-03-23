@@ -14,7 +14,7 @@ body {
     color: black;
     box-shadow: 0px 0px 10px 2px black;
     padding: 5px;
-    margin: 250px 50px 50px 50px;
+    margin: 100px 50px 50px 50px;
 }
 .project {
     margin: 25px;
@@ -27,13 +27,13 @@ body {
 }
 .project-thumbnail {
     display: inline-block;
-    height: 100px;
+    height: 25px;
     border: 2px solid lightgray;
 }
 .project-content button {
     font-family: "Montserrat";
     font-weight: 700;
-    height: 50px;
+    height: 25px;
     width: 125px;
     margin-top: 10px;
     color: gray;
