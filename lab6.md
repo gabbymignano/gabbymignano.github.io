@@ -112,6 +112,7 @@ model.fit(X, y)
 predicted_classes = model.predict(X)
 accuracy = acc(y,predicted_classes)
 print(accuracy)
+---------
 0.8857644991212654
 
 kf = KFold(n_splits=10,shuffle=True,random_state=1693)
@@ -127,6 +128,7 @@ for idxtrain, idxtest in kf.split(X):
   AC1.append(acc(ytest,model.predict(Xtest)))
   
  np.mean(AC1)
+ ---------
  0.8858082706766919
 
 
@@ -137,6 +139,8 @@ model.fit(X, y)
 predicted_classes = model.predict(X)
 accuracy = acc(y,predicted_classes)
 print(accuracy)
+ ---------
+0.9666080843585237
 
 kf = KFold(n_splits=10,shuffle=True,random_state=1693)
 AC2 = []
@@ -151,6 +155,7 @@ for idxtrain, idxtest in kf.split(X):
   AC2.append(acc(ytest,model.predict(Xtest)))
   
 np.mean(AC2)
+---------
 0.9666040100250625
 
 
@@ -183,4 +188,5 @@ for idxtrain, idxtest in kf.split(X):
   print(acc(ytest,model.predict_classes(Xstest)))
   
   np.mean(AC)
+   ---------
   0.8840538847117795
