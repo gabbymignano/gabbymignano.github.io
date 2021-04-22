@@ -65,9 +65,6 @@ model.fit(X,y)
 model.predict([[17.18,8.65]])
 ----------
 array([1])
-![Screen Shot 2021-04-22 at 11 43 48 AM](https://user-images.githubusercontent.com/78487402/115743829-06ba6980-a360-11eb-97d1-81aec750fe5c.png)
-![Screen Shot 2021-04-22 at 11 44 19 AM](https://user-images.githubusercontent.com/78487402/115743931-1a65d000-a360-11eb-930f-6a7e8e340744.png)
-
 
 # Question 9: Random Forest classifier, 100 trees, max depth 5, random state 1234. Input features: mean radius, mean texture. Apply 10 fold stratified cross-validation, estimate mean AUC
 from sklearn.ensemble import RandomForestClassifier
@@ -127,3 +124,4 @@ ax.set(xlim=[-0.05, 1.05], ylim=[-0.05, 1.05],
        title="Receiver operating characteristic example")
 ax.legend(loc="lower right")
 plt.show()
+![Screen Shot 2021-04-22 at 11 44 19 AM](https://user-images.githubusercontent.com/78487402/115743931-1a65d000-a360-11eb-930f-6a7e8e340744.png)
