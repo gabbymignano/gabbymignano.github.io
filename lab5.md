@@ -28,6 +28,7 @@ dat.target_names
 # Question 4: how many observations are in the training set?
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=1963)
 x_train.shape
+----------
 (426,30)
 
 # Index first two features, radius and texture, for future questions
@@ -39,6 +40,7 @@ X = df[cols].values
 svc = SVC(kernel='rbf', C=1,gamma='auto',probability=True).fit(X, y)
 Z = svc.predict(X)
 svc.predict([[16.78,17.89]])
+----------
 array([0])
 
 # Question 7: Using your logistic model, predict the probability a tumor is malignant if it has a radius mean of 15.78 and a texture mean of 17.89.
@@ -52,6 +54,7 @@ rad = 15.78
 text = 17.89
 proba = pipe.predict_proba([[rad,text]])
 proba
+----------
 array([[0.64134136, 0.35865864]])
 
 
@@ -60,7 +63,10 @@ model = neighbors.KNeighborsClassifier(5, weights='uniform')
 model.fit(X,y)
 
 model.predict([[17.18,8.65]])
+----------
 array([1])
+![Screen Shot 2021-04-22 at 11 43 48 AM](https://user-images.githubusercontent.com/78487402/115743829-06ba6980-a360-11eb-97d1-81aec750fe5c.png)
+![Screen Shot 2021-04-22 at 11 44 19 AM](https://user-images.githubusercontent.com/78487402/115743931-1a65d000-a360-11eb-930f-6a7e8e340744.png)
 
 
 # Question 9: Random Forest classifier, 100 trees, max depth 5, random state 1234. Input features: mean radius, mean texture. Apply 10 fold stratified cross-validation, estimate mean AUC
