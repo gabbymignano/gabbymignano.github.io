@@ -168,7 +168,7 @@ def CompareClasses(actual, predicted, names=None):
     
  y_names = data.target_names
  
- model = DecisionTreeClassifier(max_depth=19, min_samples_leaf=5, random_state=12345)
+model = DecisionTreeClassifier(max_depth=19, min_samples_leaf=5, random_state=12345)
 model.fit(Xtrain,ytrain)
 y_pred = model.predict(Xtest)
 print(model.score(Xtrain,ytrain))
